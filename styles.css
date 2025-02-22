@@ -51,3 +51,118 @@ select {
   font-size: inherit;
 }
 /* CSS Reset */
+
+/* Body */
+body {
+  background-color: #333333;
+  font-family: "Poppins", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebfdfb;
+  padding-block: 1rem;
+}
+
+/* App container */
+.weather-app-container {
+  background-image: linear-gradient(to bottom right, #d8b5ff, #1eae98);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.search-input {
+  height: 2.5rem;
+  padding-inline: 1rem;
+  background-color: #ebfdfb;
+  border: none;
+  border-radius: 2rem;
+  flex-grow: 1;
+  min-width: 2rem;
+}
+
+.search-img {
+  width: 1rem;
+}
+
+.search-button {
+  background-color: #ebfdfb;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Temperature */
+.degrees {
+  text-align: center;
+  font-size: 5rem;
+  margin-block: -2rem;
+}
+
+.location {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Extra content */
+.extra-content {
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.humidity,
+.wind-speed {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.humidity-img,
+.wind-speed-img {
+  width: 2.5rem;
+  flex-shrink: 0;
+}
+
+.humidity-percentage,
+.wind-speed-kmh {
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+@media screen and (max-width: 30rem) {
+  .weather-app-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    justify-content: space-between;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .extra-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+}
