@@ -72,6 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* Search */
@@ -126,13 +127,14 @@ body {
   display: flex;
   margin-top: 3rem;
   width: 100%;
-  justify-content: space-evenly;
+  padding-left: 2rem;
 }
 
 .humidity,
 .wind-speed {
   display: flex;
   gap: 0.5rem;
+  width: 50%;
 }
 
 .humidity-img,
@@ -152,7 +154,6 @@ body {
     width: 100vw;
     height: 100vh;
     border-radius: 0;
-    justify-content: space-between;
   }
 
   body {
@@ -161,8 +162,15 @@ body {
 
   .extra-content {
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
     margin-top: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .humidity,
+  .wind-speed {
+    width: 100%;
+    justify-content: center;
   }
 }
