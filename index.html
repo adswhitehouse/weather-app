@@ -16,25 +16,29 @@
 
 <body>
   <main>
+    <!-- Container -->
     <div class="weather-app-container">
+      <!-- Search -->
       <div class="search">
-        <input type="text" class="search-input" placeholder="Enter Location...">
-        <button class="search-button"><img src="./images/search.png" alt="magnifying glass" class="search-img"></button>
+        <input class="jsSearchInput" type="text" placeholder="Enter Location...">
+        <button class="jsSearchButton"><img src="./images/search.png" alt="magnifying glass"></button>
       </div>
-      <div class="main-content">
+      <!-- Weather image/Degrees/Location -->
+      <div class="weather">
         <div class="weather-image">
           <img src="./images/clear.png" alt="current weather state">
         </div>
-        <p class="degrees">10&deg;c</p>
-        <p class="location">London</p>
+        <h1 class="jsDegrees">10&deg;c</h1>
+        <h2 class="jsLocation">London</h2>
       </div>
-      <div class="extra-content">
+      <!-- Humidity/Wind Speed -->
+      <div class="details">
         <div class="humidity">
           <div class="humidity-img">
             <img src="./images/humidity.png" alt="humidity">
           </div>
           <div class="humidity-info">
-            <p class="humidity-percentage">90%</p>
+            <p class="humidity-percentage jsHumidityPercentage">90%</p>
             <p>Humidity</p>
           </div>
         </div>
@@ -43,7 +47,7 @@
             <img src="./images/wind.png" alt="wind">
           </div>
           <div class="wind-speed-info">
-            <p class="wind-speed-kmh">2.68 km/h</p>
+            <p class="wind-speed-kmh jsWindSpeedKmh">2.68 km/h</p>
             <p>Wind Speed</p>
           </div>
         </div>
